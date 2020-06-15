@@ -1,0 +1,12 @@
+[package]
+name = "bf-gen"
+version = "0.1.0"
+authors = ["Nick Samson <me@nicksamson.com>"]
+edition = "2018"
+
+[[bin]]
+name = "hello"
+path = "src/bin/hello.rs"
+
+[dependencies]
+bf = { path = "../bf" }
