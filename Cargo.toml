@@ -8,5 +8,17 @@ edition = "2018"
 name = "hello"
 path = "src/bin/hello.rs"
 
+[[bin]]
+name = "hanoi"
+path = "src/bin/hanoi.rs"
+
+[[bin]]
+name = "long"
+path = "src/bin/long.rs"
+
+[[bin]]
+name = "mandelbrot"
+path = "src/bin/mandelbrot.rs"
+
 [dependencies]
 bf = { path = "../bf" }

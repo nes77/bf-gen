@@ -1,10 +1,10 @@
 
 
-use bf_gen::bf;
+use bf_gen::bf_simple;
 use ::bf as runtime;
 
-bf! {
-    hello => [ This program prints "Hello World!" and a newline to the screen, its
+bf_simple! {
+  hello => [ This program prints "Hello World!" and a newline to the screen, its
   length is 106 active command characters. [It is not the shortest.]
 
   This loop is an "initial comment loop", a simple way of adding a comment
@@ -50,9 +50,6 @@ Pointer :   ^
 }
 
 fn main() -> Result<(), runtime::Error> {
-    let mut ctx = runtime::Context::new();
-    hello(&mut ctx)?;
-    println!("{:?}", ctx);
-
+    hello();
     Ok(())
 }
